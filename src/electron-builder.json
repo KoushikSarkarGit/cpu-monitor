@@ -1,0 +1,25 @@
+{
+    "appId": "com.koushik.sarkar-electron-app",
+    "files": [
+        "dist-electron",
+        "dist-react"
+    ],
+    "extraResources": [
+        "dist-electron/preload.cjs",
+        "src/assets/**"
+    ],
+    "icon": "./cpu-monitor-logo.png",
+    "mac": {
+        "target": "dmg"
+    },
+    "linux": {
+        "target": "AppImage",
+        "category": "Utility"
+    },
+    "win": {
+        "target": [
+            "portable",
+            "msi"
+        ]
+    }
+}
